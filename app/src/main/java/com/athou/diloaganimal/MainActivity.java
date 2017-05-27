@@ -1,5 +1,6 @@
 package com.athou.diloaganimal;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -22,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void onShowDialogStyle3(View v) {
         new LoadDialogStyle3(this).show();
+    }
+
+    public void onShowWaveDialogStyle(View v) {
+        startActivity(new Intent(this, WaveLoadActivity.class));
     }
 }
 
